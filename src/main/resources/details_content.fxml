@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="1140.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.adobe.sign.adobelibrary.ui.modules.AgreementDetailsContentModule">
+   <children>
+      <Label fx:id="agreementNameLabel" layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="500.0">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="49.0" prefHeight="27.0" prefWidth="51.0" text="From:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="fromLabel" layoutX="69.0" layoutY="49.0" prefHeight="27.0" prefWidth="500.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="76.0" prefHeight="27.0" prefWidth="27.0" text="To:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="toLabel" layoutX="47.0" layoutY="76.0" prefHeight="27.0" prefWidth="500.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="103.0" prefHeight="27.0" prefWidth="45.0" text="Date:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="dateLabel" layoutX="65.0" layoutY="103.0" prefHeight="27.0" prefWidth="500.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="130.0" prefHeight="27.0" prefWidth="58.0" text="Status:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" layoutX="81.0" layoutY="130.0" prefHeight="27.0" prefWidth="500.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="157.0" text="Message:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageLabel" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="102.0" layoutY="157.0" maxHeight="1.7976931348623157E308" prefHeight="86.0" prefWidth="1027.0" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TabPane layoutX="14.0" layoutY="267.0" prefHeight="450.0" prefWidth="1110.0" tabClosingPolicy="UNAVAILABLE" tabMinWidth="170.0">
+        <tabs>
+          <Tab text="View">
+            <content>
+              <AnchorPane fx:id="viewAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="1117.0">
+                     <children>
+                        <Pagination fx:id="viewContentPagination" layoutX="5.0" layoutY="-1.0" maxPageIndicatorCount="0" pageCount="0" prefHeight="425.0" prefWidth="1091.0" />
+                        <ProgressIndicator fx:id="viewProgressIndicator" layoutX="507.0" layoutY="169.0" prefHeight="86.0" prefWidth="87.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab disable="true" text="Share">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="275.0" layoutY="194.0" text="This feature has not been implemented in this demo." textFill="RED">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab disable="true" text="Protect">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="275.0" layoutY="194.0" text="This feature has not been implemented in this demo." textFill="RED">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab disable="true" text="Remind">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="275.0" layoutY="194.0" text="This feature has not been implemented in this demo." textFill="RED">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="History">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="historyListView" prefHeight="421.0" prefWidth="1110.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab disable="true" text="Notes">
+               <content>
+                  <AnchorPane>
+                     <children>
+                        <Label layoutX="275.0" layoutY="194.0" text="This feature has not been implemented in this demo." textFill="RED">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</Pane>
